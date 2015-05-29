@@ -21,7 +21,7 @@ describe "SQL Challenge" do
   end 
 
   it 'finds Maru by name and updates her age to 7' do
-    your_answer = "UPDATE cats SET age=7 WHERE name='Maru';"
+    your_answer = 'UPDATE cats SET age=7 WHERE name="Maru";'
     expect(your_answer).to satisfy {|s| answer_5.include?(s) }
   end
 
